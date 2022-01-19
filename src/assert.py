@@ -36,3 +36,15 @@ def delete_product(prod_id, user, store):
     assert store.has_product(), "Unknown product"
 
     store.get_product(prod_id).delete()
+
+# CORRECT implementation for case where we are validating data
+class AuthError(Exception):
+    pass
+
+def delete_product_correct(prod_id, user, store):
+    if not user.is_admin():
+        raise AuthError("Must be admin")
+    if not store.has_product():
+        raise ValueError("Unknown product")
+
+    store.get_product(prod_id).delete()
