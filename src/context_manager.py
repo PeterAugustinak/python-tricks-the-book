@@ -1,17 +1,18 @@
-# not using context manager - example with opening file
+"""Context managers"""
 
+"""Not using context manager - example with opening file"""
 f = open('hello.txt', 'w')
 try:
     f.write('hello world')
 finally:
     f.close()
 
-# using context manager
+"""Using context manager"""
 with open('hello.txt', 'w'):
     f.write('hello world')
 # f.close() is called automatically leaving with block
 
-# implementing context manager on class level
+"""Implementing context manager on class level"""
 class ManagedFile:
 
     def __init__(self, name):
@@ -29,7 +30,7 @@ class ManagedFile:
 with ManagedFile('hello.txt') as f:
     f.write('hello world')
 
-# implementing context manager on function level with property
+"""implementing context manager on function level with property"""
 from contextlib import contextmanager
 
 @contextmanager
@@ -44,8 +45,7 @@ def managed_file(name):
 with managed_file('hello.txt') as f:
     f.write('hello world')
 
-
-# another example
+"""Another example"""
 class Indenter:
 
     def __init__(self):

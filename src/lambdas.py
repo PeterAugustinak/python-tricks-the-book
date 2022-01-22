@@ -1,11 +1,13 @@
-# using by adding to
+"""Lambdas"""
+
+"""Using by adding to var"""
 add = lambda x, y: x + y
 print(add(5, 3))
 
-# lambda expression
+"""Lambda expression"""
 print((lambda x, y: x + y)(5, 3))
 
-# real (only?) useful usage
+"""Real (only?) useful usage"""
 tuples = [(1, 'd'), (2, 'b'), (3, 'a'), (4, 'c')]
 sorted_tuples = sorted(tuples, key=lambda x: x[1])
 # just playing here ..
@@ -15,7 +17,7 @@ for num, char in [tup for tup in sorted_tuples]:
 # another sorting example
 print(sorted(range(-5, 6), key=lambda x: x * x))  # TODO: I don't get it
 
-# usage as closures
+"""Usage as closures"""
 def make_adder(n):
     return lambda x: x + n
 

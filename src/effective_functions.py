@@ -1,9 +1,11 @@
+"""Effective functions"""
+
 def yell(text):
     return text.upper() + '!'
 
 print(yell('hello'))
 
-# add function to another variable
+"""Adding function to another variable"""
 bark = yell
 print(bark("woof"))
 
@@ -19,7 +21,7 @@ except NameError:
 # but as the python adding name space into the function in time of creation:
 print(bark.__name__)
 
-# functions can be items in lst
+"""Functions as items in lst"""
 funcs = [bark, str.lower, str.capitalize]
 for f in funcs:
     print(f, f('hey there'))
@@ -27,8 +29,8 @@ for f in funcs:
 # you don't need to add func to var and you can cal; it directly
 print(funcs[0]('called directly'))
 
-# func inc func
-# HIGH-ORDER FUNC (for bark and whisper)
+"""Func inc func"""
+"""HIGH-ORDER FUNC (for bark and whisper)"""
 def greet(func):
     greeting = func('Hi, I am a Python program')
     print(greeting)
@@ -44,7 +46,7 @@ g = [map(f, ['hello', 'hey', 'hi']) for f in [bark, whisper]]
 for map in g:
     print(list(map))
 
-# INNER FUNC (nested)
+"""INNER FUNC (nested)"""
 def speak(text):
     def whisper(t):
         return t.lower() + '...'
@@ -70,7 +72,7 @@ print(get_speak_func(0.7))
 speak_func = get_speak_func(0.3)
 print(speak_func('Calling inner function returned'))
 
-# LEXICAL CLOSURES / CLOSURES - capturing local state
+"""LEXICAL CLOSURES / CLOSURES - capturing local state"""
 def get_speak_func_state(text, volume):
     def whisper():
         return text.lower() + '...'
@@ -84,7 +86,7 @@ def get_speak_func_state(text, volume):
 print(get_speak_func_state('Calling closure func with captured local state',
                            0.7)())
 
-# one arg captured
+"""One arg captured"""
 def make_adder(n):
     def add(x):
         return x + n
@@ -96,7 +98,7 @@ plus_5 = make_adder(5)
 print(plus_3(4))
 print(plus_5(4))
 
-# making callable object - instance of class behaves like callable func
+"""Making callable object - instance of class behaves like callable func"""
 class Adder:
     def __init__(self, n):
         self.n = n
@@ -107,7 +109,7 @@ class Adder:
 plus_3 = Adder(3)
 print(plus_3(4))
 
-# how to check if object is callable
+"""Check if object is callable"""
 print(callable(plus_3))
 print(callable(4))
 

@@ -1,4 +1,6 @@
-# standard using of list, dict, set
+"""Comma placements"""
+
+"""standard using of list, dict, set"""
 l = ['a', 'b', 'c']
 d = {'a': 1, 'b': 2, 'c': 3}
 s = {1, 2, 3}

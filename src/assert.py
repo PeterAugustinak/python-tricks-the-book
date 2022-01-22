@@ -1,4 +1,6 @@
-# good example to use assert in the code
+"""Assets"""
+
+"""Good example to use assert in the code"""
 def apply_discount(product, discount):
     price = int(product['price'] * (1.0 - discount))
     assert 0 <= price <= product['price']
@@ -12,7 +14,7 @@ print(price_valid)
 price_invalid = apply_discount(shoes, 2.0)
 print(price_invalid)
 
-# another possible example to use
+"""Another possible example to use"""
 def do_x():
     pass
 
@@ -28,7 +30,7 @@ elif cond == 'y':
 else:
     assert False, ("This should never happen")
 
-# INCORRECT USAGE for data validation
+"""INCORRECT USAGE for data validation"""
 # if asserts are disabled, then this can cause problems - any user can
 # delete, unknown product can be trying to be deleted (DOS attack)
 def delete_product(prod_id, user, store):
@@ -37,7 +39,7 @@ def delete_product(prod_id, user, store):
 
     store.get_product(prod_id).delete()
 
-# CORRECT implementation for case where we are validating data
+"""CORRECT implementation for case where we are validating data"""
 class AuthError(Exception):
     pass
 
