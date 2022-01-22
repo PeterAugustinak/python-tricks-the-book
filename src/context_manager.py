@@ -8,7 +8,7 @@ finally:
 
 # using context manager
 with open('hello.txt', 'w'):
-    f.write()
+    f.write('hello world')
 # f.close() is called automatically leaving with block
 
 # implementing context manager on class level
