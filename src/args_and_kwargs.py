@@ -46,6 +46,3 @@ def greet(greeting, name):
     return f'{greeting} {name}'
 
 greet('Hello', 'Bob')
-
-
-
