@@ -1,4 +1,4 @@
-"""3.6 Nothing to return here"""
+"""3.6: Nothing to return here"""
 
 # explicit None return -> best to use this to clear and concise definition
 def foo1(value):

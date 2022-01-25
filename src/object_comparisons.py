@@ -1,4 +1,4 @@
-"""4.1 - Object comparisons: 'is' vs '=='"""
+"""4.1: - Object comparisons: 'is' vs '=='"""
 
 # == example. Objects are the same
 a = [1, 2, 3]
