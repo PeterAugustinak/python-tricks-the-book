@@ -103,7 +103,7 @@ def uppercase(func):
 
 @uppercase
 def greet_debug_functools():
-    """Return a friendly greeting (functool)"""
+    """Return a friendly greeting (functools)"""
     return "Hello!"
 
 print(greet_debug_functools.__name__)
