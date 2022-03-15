@@ -1,4 +1,4 @@
-"""Effective functions"""
+"""3.1 Python functions re First-class"""
 
 def yell(text):
     return text.upper() + '!'

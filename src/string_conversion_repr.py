@@ -1,4 +1,4 @@
-"""4.2: String conversion (Every class needs a __repr__)"""
+"""4.2 String conversion (Every class needs a __repr__)"""
 
 class Car:
 

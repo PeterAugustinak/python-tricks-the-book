@@ -1,4 +1,4 @@
-"""Context managers"""
+"""2.3 Context managers and the with blocks"""
 
 """Not using context manager - example with opening file"""
 f = open('hello.txt', 'w')

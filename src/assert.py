@@ -1,4 +1,4 @@
-"""Assets"""
+"""2.1 Covering your A** with assertions"""
 
 """Good example to use assert in the code"""
 def apply_discount(product, discount):

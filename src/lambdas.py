@@ -1,4 +1,4 @@
-"""Lambdas"""
+"""3.2 Lambdas are single-expression functions"""
 
 """Using by adding to var"""
 add = lambda x, y: x + y

@@ -1,4 +1,4 @@
-"""Various possibilities to format a string"""
+"""2.5 A shocking truth about String formatting"""
 
 errno = 50159747054
 name = 'Bob'

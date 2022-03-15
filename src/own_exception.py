@@ -1,4 +1,4 @@
-"""4.3: Defining your own exception classes"""
+"""4.3 Defining your own exception classes"""
 
 # user defined BASE exception class
 class BaseValidationError(ValueError):

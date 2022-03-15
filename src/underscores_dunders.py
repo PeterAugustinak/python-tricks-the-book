@@ -1,5 +1,4 @@
-"""Underscores and dunders"""
-
+"""2.4 Underscores, Dunders and more"""
 
 _var = ''  # value for internal use (by convention)
 __var = '' # name mangling within class usage (enforced by Python interpreter)

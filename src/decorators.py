@@ -1,4 +1,4 @@
-""""Decorators"""
+"""3.3 The Power of Decorators"""
 
 """Abstract example of decorator"""
 def null_decorator(func):
