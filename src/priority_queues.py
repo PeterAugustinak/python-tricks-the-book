@@ -28,7 +28,7 @@ while h:
     next_item = heapq.heappop(h)
     print(next_item)
 
-"""queue.PriorityQueue - Beautiful Priority Queues"""
+"""PREFERRED: queue.PriorityQueue - Beautiful Priority Queues"""
 print()
 
 from queue import PriorityQueue
