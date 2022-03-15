@@ -1,4 +1,4 @@
-"""List Slicing Tricks and the Sushi Operator"""
+"""6.3 List Slicing Tricks and the Sushi Operator"""
 
 # [start:stop:step]
 lst = [1, 2, 3, 4, 5]
