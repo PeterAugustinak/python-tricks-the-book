@@ -22,6 +22,6 @@ print(zs2)
 zs3 = dict(xs, **ys)
 print(zs3)
 
-# by unpacking objects - for arbitrary no. of dicst (Python 3.5 and higher)
+# by unpacking objects - for arbitrary no. of dicts (Python 3.5 and higher)
 zs4 = {**xs, **ys}
 print(zs4)
