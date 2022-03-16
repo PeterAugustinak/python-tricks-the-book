@@ -23,7 +23,7 @@
 
 ### Chapter 4: Classes & OOP
 - 4.1 Object comparisons: 'is' vs '==' (object_comparison.py)
-- String conversion (Every class needs a __repr__) (string_conversion_repr.py)
+- 4.2 String conversion (Every class needs a __repr__) (string_conversion_repr.py)
 - 4.3 Defining your own exception classes (own_exception.py)
 - 4.4: Cloning objects for fun and profit (cloning_objects.py)
 - 4.5 bstract Base Classes Keep Inheritance in check (abstract_base_classes.py)
