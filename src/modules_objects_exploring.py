@@ -1,4 +1,4 @@
-"""8.1 Exploring Python MOdules and Objects"""
+"""8.1 Exploring Python Modules and Objects"""
 
 
 import datetime
